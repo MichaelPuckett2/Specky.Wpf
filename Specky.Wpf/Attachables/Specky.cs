@@ -11,6 +11,10 @@ namespace Specky.Wpf.Attachables
         public static void SetDataContext(DependencyObject obj, object value)
             => obj.SetValue(DataContextProperty, value);
 
+        /// <summary>
+        /// Example usage:
+        /// Ioc:Ioc.DataContext="{x:Type ViewModels:ExampleViewModel}"
+        /// </summary>
         public static readonly DependencyProperty DataContextProperty =
             DependencyProperty.RegisterAttached(DataContext, typeof(object), typeof(Ioc), new PropertyMetadata(null,
             new PropertyChangedCallback((s, e) =>
