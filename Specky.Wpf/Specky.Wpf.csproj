@@ -4,6 +4,10 @@
     <OutputType>Library</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <UseWPF>true</UseWPF>
+    <Version>1.0.1</Version>
+    <Company>Triple G3</Company>
+    <Authors>Michael Puckett, II</Authors>
+    <Description>Assist's Specky injecting into XAML for WPF applications.</Description>
   </PropertyGroup>
 
   <ItemGroup>
