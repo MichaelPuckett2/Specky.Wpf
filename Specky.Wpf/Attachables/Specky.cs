@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Windows;
 
-namespace Specky.Wpf.Attachable
+namespace Specky.Wpf.Attachables
 {
-    public class Ioc
+    public sealed class Ioc
     {
         private const string DataContext = "DataContext";
         public static object GetDataContext(DependencyObject obj)
@@ -35,7 +35,5 @@ namespace Specky.Wpf.Attachable
                     }
                 }
             })));
-
-
     }
 }
