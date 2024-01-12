@@ -1,10 +1,7 @@
-﻿using System;
+﻿namespace Specky.Wpf.Exceptions;
 
-namespace Specky.Wpf.Exceptions
+[Serializable]
+public sealed class RelayCommandParameterNullException : Exception
 {
-    [Serializable]
-    public sealed class RelayCommandParameterNullException : Exception
-    {
-        public RelayCommandParameterNullException(string message) : base(message) { }
-    }
+    public RelayCommandParameterNullException(string message) : base(message) { }
 }

@@ -1,30 +1,32 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <OutputType>Library</OutputType>
-    <TargetFramework>netcoreapp3.1</TargetFramework>
-    <UseWPF>true</UseWPF>
-    <Version>1.0.4</Version>
-    <Company>Triple G3</Company>
-    <Authors>Michael Puckett, II</Authors>
-    <Description>Assist's Specky injecting into XAML for WPF applications.</Description>
-    <PackageLicenseFile>LICENSE</PackageLicenseFile>
-    <Copyright>@2021</Copyright>
-    <PackageProjectUrl>https://github.com/MichaelPuckett2/Specky.Wpf</PackageProjectUrl>
-    <RepositoryUrl>https://github.com/MichaelPuckett2/Specky.Wpf</RepositoryUrl>
-    <RepositoryType>Open Source</RepositoryType>
-    <PackageTags>Specky, Dependency Injection, WPF</PackageTags>
-  </PropertyGroup>
+	<PropertyGroup>
+		<OutputType>Library</OutputType>
+		<TargetFramework>net8.0-windows</TargetFramework>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<UseWPF>true</UseWPF>
+		<Version>1.0.4</Version>
+		<Company>Triple G3</Company>
+		<Authors>Michael Puckett, II</Authors>
+		<Description>Assist's Specky injecting into XAML for WPF applications.</Description>
+		<PackageLicenseFile>LICENSE</PackageLicenseFile>
+		<Copyright>@2021</Copyright>
+		<PackageProjectUrl>https://github.com/MichaelPuckett2/Specky.Wpf</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/MichaelPuckett2/Specky.Wpf</RepositoryUrl>
+		<RepositoryType>Open Source</RepositoryType>
+		<PackageTags>Specky, Dependency Injection, WPF</PackageTags>
+	</PropertyGroup>
 
-  <ItemGroup>
-    <PackageReference Include="Specky" Version="1.0.9" />
-  </ItemGroup>
+	<ItemGroup>
+		<None Include="..\LICENSE">
+			<Pack>True</Pack>
+			<PackagePath></PackagePath>
+		</None>
+	</ItemGroup>
 
-  <ItemGroup>
-    <None Include="..\LICENSE">
-      <Pack>True</Pack>
-      <PackagePath></PackagePath>
-    </None>
-  </ItemGroup>
+	<ItemGroup>
+	  <PackageReference Include="Specky7" Version="7.0.3" />
+	</ItemGroup>
 
 </Project>
