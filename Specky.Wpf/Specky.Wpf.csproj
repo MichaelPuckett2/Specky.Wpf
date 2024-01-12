@@ -6,16 +6,16 @@
 		<Nullable>enable</Nullable>
 		<ImplicitUsings>enable</ImplicitUsings>
 		<UseWPF>true</UseWPF>
-		<Version>1.0.4</Version>
+		<Version>8.0</Version>
 		<Company>Triple G3</Company>
 		<Authors>Michael Puckett, II</Authors>
-		<Description>Assist's Specky injecting into XAML for WPF applications.</Description>
+		<Description>Assist's with injecting types in WPF applications via XAML. Also provides basic ViewModelBase and RelayCommand.</Description>
 		<PackageLicenseFile>LICENSE</PackageLicenseFile>
-		<Copyright>@2021</Copyright>
+		<Copyright>@2024</Copyright>
 		<PackageProjectUrl>https://github.com/MichaelPuckett2/Specky.Wpf</PackageProjectUrl>
 		<RepositoryUrl>https://github.com/MichaelPuckett2/Specky.Wpf</RepositoryUrl>
 		<RepositoryType>Open Source</RepositoryType>
-		<PackageTags>Specky, Dependency Injection, WPF</PackageTags>
+		<PackageTags>Specky7, Specky, Dependency Injection, WPF</PackageTags>
 	</PropertyGroup>
 
 	<ItemGroup>
