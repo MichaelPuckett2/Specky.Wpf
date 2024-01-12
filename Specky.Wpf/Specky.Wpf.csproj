@@ -18,6 +18,10 @@
 		<PackageTags>Specky7, Specky, Dependency Injection, WPF</PackageTags>
 	</PropertyGroup>
 
+		<PropertyGroup>
+			<PackageReadmeFile>README.md</PackageReadmeFile>
+		</PropertyGroup>
+
 	<ItemGroup>
 		<None Include="..\LICENSE">
 			<Pack>True</Pack>
