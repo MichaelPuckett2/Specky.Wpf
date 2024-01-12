@@ -1,10 +1,8 @@
 ﻿using Specky.Wpf.Exceptions;
-using Specky7;
 using System.Windows;
 
 namespace Specky.Wpf.Attachables;
 
-[Singleton]
 public sealed class Specky
 {
     public static IServiceProvider ServiceProvider { get; set; } = new EmptyServiceProvider();
@@ -16,7 +14,8 @@ public sealed class Specky
 
     /// <summary>
     /// Example usage:
-    /// Ioc:Ioc.DataContext="{x:Type ViewModels:ExampleViewModel}"
+    /// xmlns:Specky="clr-namespace:Specky.Wpf.Attachables;assembly=Specky.Wpf"
+    /// Specky:Specky.DataContext="{x:Type ViewModels:ExampleViewModel}"
     /// </summary>
     public static readonly DependencyProperty DataContextProperty =
         DependencyProperty.RegisterAttached(DataContext, typeof(object), typeof(Specky), new PropertyMetadata(null,
