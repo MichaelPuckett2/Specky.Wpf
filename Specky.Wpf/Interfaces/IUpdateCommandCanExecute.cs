@@ -1,7 +1,6 @@
-﻿namespace Specky.Wpf.Interfaces
+﻿namespace Specky.Wpf.Interfaces;
+
+public interface IUpdateCommandCanExecute
 {
-    public interface IUpdateCommandCanExecute
-    {
-        void UpdateCanExecute();
-    }
+    void UpdateCanExecute();
 }
